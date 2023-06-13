@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/calculateButton"
+            android:layout_width="155dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTintMode="add"
+            android:fontFamily="sans-serif-black"
+            android:onClick="calculate"
+            android:text="SEND"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input1"
+            app:rippleColor="#FF006F" />
+
+        <EditText
+            android:id="@+id/input1"
+            android:layout_width="342dp"
+            android:layout_height="78dp"
+            android:layout_marginTop="56dp"
+            android:ems="10"
+            android:hint="Write message"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/output1"
+            android:layout_width="354dp"
+            android:layout_height="62dp"
+            android:text="Hello World!"
+            android:textAlignment="center"
+            android:textSize="48sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calculateButton"
+            app:layout_constraintVertical_bias="0.31" />
+
+        <Button
+            android:id="@+id/calculateButton"
+            android:layout_width="155dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="92dp"
+            android:backgroundTintMode="add"
+            android:fontFamily="sans-serif-black"
+            android:onClick="calculate"
+            android:text="CALCULATE"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input1"
+            app:rippleColor="#FF006F" />
+
+        <EditText
+            android:id="@+id/input1"
+            android:layout_width="210dp"
+            android:layout_height="71dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Enter a number"
+            android:inputType="number|numberDecimal|numberSigned"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.139"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input2" />
+
+        <EditText
+            android:id="@+id/input2"
+            android:layout_width="208dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:hint="Enter a number"
+            android:inputType="number|numberDecimal|numberSigned"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.137"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
